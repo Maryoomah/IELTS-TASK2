@@ -96,6 +96,11 @@ export default function Practice() {
         >
           New Question
         </Button>
+           <Button
+          variant="secondary"
+        >
+          View Your Essays
+        </Button>
       </div>
     </main>
   );
