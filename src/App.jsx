@@ -4,6 +4,7 @@ import Landing from "./pages/landingPage";
 import LessonPreview from "./pages/lessonPreview";
 import Lesson from "./pages/lessonPage";
 import Practice from "./pages/practicePage";
+import ViewEssays from "./pages/viewessay";
 
 export default function App() {
   const [appState, setAppState] = useState({
@@ -25,6 +26,9 @@ export default function App() {
         path="/practice"
         element={<Practice appState={appState} setAppState={setAppState} />}
       />
+                <Route path="/history" element={<ViewEssays />} />
+
     </Routes>
+
   );
 }

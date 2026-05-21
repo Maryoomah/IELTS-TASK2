@@ -13,7 +13,7 @@ export default function Collapsible({ title, children }) {
         <span>{open ? "−" : "+"}</span>
       </button>
 
-      {open && <div className="p-6 space-y-5">{children}</div>}
+      {open && <div className="p-4 sm:p-6 space-y-5">{children}</div>}
     </div>
   );
 }
