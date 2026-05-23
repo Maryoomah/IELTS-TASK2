@@ -3,15 +3,14 @@ import Button from "../components/button";
 import { useNavigate } from "react-router-dom";
 import { getUserId } from "../utils/getUserId";
 
-
 export default function ViewEssays() {
   const [essays, setEssays] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
     const userId = getUserId()
-    fetch(`http://127.0.0.1:5000/submissions"?user_id=${userId}`)
-      .then((res) => res.json())
+fetch(`${import.meta.env.VITE_API_URL}/submissions?user_id=${userId}`)    
+  .then((res) => res.json())
       .then((data) => setEssays(data))
       .catch((err) => console.log(err));
   }, []);
