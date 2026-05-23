@@ -56,7 +56,7 @@ const handleSubmit = async () => {
 
   return (
     <main className="min-h-screen bg-linear-to-br from-rose-50 via-white to-rose-100 px-4 sm:px-6 py-10">
-       <div className="m-8 sticky top-4" >
+       <div className="m-8 sticky top-4 hidden md:block" >
               <Button
                 onClick={() => navigate(-1)}
               >
