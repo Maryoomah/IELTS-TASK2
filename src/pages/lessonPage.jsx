@@ -320,7 +320,7 @@ export default function Lesson() {
                 {/* Types */}
                 <section
                   id="types"
-                  className="bg-white border border-rose-100 rounded-3xl p-6 sm:p-8 shadow-xl shadow-rose-100/60"
+                  className="bg-white border border-rose-100 rounded-3xl p-4 sm:p-8 shadow-xl shadow-rose-100/60"
                 >
                   <h2 className="text-slate-900 font-extrabold text-2xl sm:text-3xl">
                     The 5 Types of IELTS Essays
@@ -334,8 +334,7 @@ export default function Lesson() {
                   <div className="mt-6 space-y-4">
                     {essayTypes.map((type) => (
                       <Collapsible key={type.id} title={type.title}>
-                        <div className="space-y-5 text-slate-600 leading-7 text-[15px] sm:text-base font-sans">
-                          <p>{type.description}</p>
+<div className="space-y-5 text-slate-600 leading-7 text-[15px] sm:text-base font-sans overflow-hidden">                          <p>{type.description}</p>
 
                           <div>
                             <h4 className="font-semibold text-slate-900">

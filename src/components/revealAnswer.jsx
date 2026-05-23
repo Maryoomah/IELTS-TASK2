@@ -13,8 +13,9 @@ export default function RevealAnswer({ children }) {
       </button>
 
       {show && (
-        <div className="mt-4 w-full max-w-3xl mx-auto rounded-2xl bg-rose-50 px-5 py-5 sm:px-8 sm:py-6 font-sans text-left text-slate-600 leading-8">
-          {children}
+<div className="mt-4 w-full rounded-2xl bg-rose-50 px-4 py-5 sm:px-8 sm:py-6 font-sans text-left">
+  {children}
+</div>          {children}
         </div>
       )}
     </div>
