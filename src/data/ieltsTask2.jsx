@@ -19,7 +19,7 @@ export const essayTypes = [
     ],
 
     modelEssay: (
-      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-left [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
         <div>
           <h5>Introduction</h5>
 
@@ -88,7 +88,7 @@ export const essayTypes = [
     ],
 
     modelEssay: (
-      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-left [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
         <div>
           <h5>Introduction</h5>
 
@@ -160,7 +160,7 @@ export const essayTypes = [
     ],
 
     modelEssay: (
-      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-left [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
         <div>
           <h5>Introduction</h5>
 
@@ -233,7 +233,7 @@ export const essayTypes = [
   ],
 
   modelEssay: (
-    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-left [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
       <div>
         <h5>Introduction</h5>
 
@@ -307,7 +307,7 @@ export const essayTypes = [
   ],
 
   modelEssay: (
-    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-left [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
       <div>
         <h5>Introduction</h5>
 
