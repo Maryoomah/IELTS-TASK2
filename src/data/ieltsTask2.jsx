@@ -21,7 +21,7 @@ export const essayTypes = [
         <div>
           <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
 
-          <p className="">
+          <p className="text-justify leading-8">
             Technology has transformed the way people communicate in modern
             society. While some argue that it reduces social interaction, I
             disagree because it enables new and meaningful forms of connection.
