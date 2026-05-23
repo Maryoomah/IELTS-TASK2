@@ -1,3 +1,4 @@
+
 export const essayTypes = [
   // ================= OPINION =================
   {
@@ -16,12 +17,13 @@ export const essayTypes = [
       "Body Paragraph 2 – second reason + explanation + example",
       "Conclusion – restate opinion and summarize ideas",
     ],
-    modelEssay: (
-      <div className="space-y-5 text-slate-600 leading-relaxed">
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
 
-          <p className="text-justify leading-8">
+    modelEssay: (
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+        <div>
+          <h5>Introduction</h5>
+
+          <p>
             Technology has transformed the way people communicate in modern
             society. While some argue that it reduces social interaction, I
             disagree because it enables new and meaningful forms of connection.
@@ -29,7 +31,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 1</h5>
+          <h5>Body Paragraph 1</h5>
 
           <p>
             Firstly, technology allows individuals to maintain relationships
@@ -41,7 +43,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 2</h5>
+          <h5>Body Paragraph 2</h5>
 
           <p>
             Moreover, online communities enable people with shared interests to
@@ -54,7 +56,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Conclusion</h5>
+          <h5>Conclusion</h5>
 
           <p>
             In conclusion, although technology changes communication styles, it
@@ -86,9 +88,9 @@ export const essayTypes = [
     ],
 
     modelEssay: (
-      <div className="space-y-5 text-slate-600 leading-relaxed">
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
+          <h5>Introduction</h5>
 
           <p>
             Education has evolved significantly with the rise of digital
@@ -99,7 +101,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 1</h5>
+          <h5>Body Paragraph 1</h5>
 
           <p>
             Supporters of online education claim that it offers flexibility and
@@ -113,7 +115,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 2</h5>
+          <h5>Body Paragraph 2</h5>
 
           <p>
             However, traditional classrooms provide direct interaction with
@@ -126,7 +128,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Conclusion</h5>
+          <h5>Conclusion</h5>
 
           <p>
             In conclusion, although online learning offers convenience and
@@ -158,9 +160,9 @@ export const essayTypes = [
     ],
 
     modelEssay: (
-      <div className="space-y-5 text-slate-600 leading-relaxed">
+      <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
+          <h5>Introduction</h5>
 
           <p>
             Traffic congestion has become a major issue in many urban areas
@@ -171,7 +173,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 1</h5>
+          <h5>Body Paragraph 1</h5>
 
           <p>
             One significant problem caused by traffic congestion is increased
@@ -185,7 +187,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 2</h5>
+          <h5>Body Paragraph 2</h5>
 
           <p>
             These issues can be addressed by improving public transportation
@@ -199,7 +201,7 @@ export const essayTypes = [
         </div>
 
         <div>
-          <h5 className="font-bold text-slate-900 mb-2">Conclusion</h5>
+          <h5>Conclusion</h5>
 
           <p>
             In conclusion, traffic congestion creates environmental and economic
@@ -211,149 +213,155 @@ export const essayTypes = [
       </div>
     ),
   },
+  
+// ================= ADVANTAGES DISADVANTAGES =================
+{
+  id: "advantages-disadvantages",
+  title: "Advantages and Disadvantages Essay",
 
-  // ================= ADVANTAGES DISADVANTAGES =================
-  {
-    id: "advantages-disadvantages",
-    title: "Advantages and Disadvantages Essay",
+  description:
+    "You evaluate both the positive and negative aspects of a development or trend objectively.",
 
-    description:
-      "You evaluate both the positive and negative aspects of a development or trend objectively.",
+  question:
+    "Remote work is becoming increasingly common. What are the advantages and disadvantages of this trend?",
 
-    question:
-      "Remote work is becoming increasingly common. What are the advantages and disadvantages of this trend?",
+  structure: [
+    "Introduction – introduce trend",
+    "Body Paragraph 1 – advantages with examples",
+    "Body Paragraph 2 – disadvantages with examples",
+    "Conclusion – balanced summary or opinion",
+  ],
 
-    structure: [
-      "Introduction – introduce trend",
-      "Body Paragraph 1 – advantages with examples",
-      "Body Paragraph 2 – disadvantages with examples",
-      "Conclusion – balanced summary or opinion",
-    ],
+  modelEssay: (
+    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+      <div>
+        <h5>Introduction</h5>
 
-    modelEssay: (
-      <div className="space-y-5 text-slate-600 leading-relaxed">
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
-
-          <p>
-            Remote working has grown rapidly due to technological advancements
-            and changing workplace expectations. This trend has both positive
-            and negative effects, as it offers employees greater flexibility
-            while also creating challenges for communication and teamwork.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 1</h5>
-
-          <p>
-            One major advantage of remote work is flexibility. Employees can
-            often organise their schedules more effectively, which allows them
-            to balance work and personal responsibilities. This can improve job
-            satisfaction and reduce stress, especially for workers with family
-            commitments. Furthermore, companies can reduce operational costs
-            because they may spend less on office space, electricity, and other
-            workplace facilities.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 2</h5>
-
-          <p>
-            However, remote work also has disadvantages. It may lead to social
-            isolation because employees have fewer opportunities to interact
-            with colleagues in person. In addition, reduced face-to-face
-            communication can make collaboration more difficult, especially when
-            teams need to share ideas or solve problems quickly. Over time, this
-            may negatively affect creativity, teamwork, and employee wellbeing.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Conclusion</h5>
-
-          <p>
-            In conclusion, while remote work offers flexibility and cost
-            savings, it also presents challenges related to communication,
-            collaboration, and social connection. Therefore, organisations
-            should try to balance remote work with opportunities for regular
-            interaction among employees.
-          </p>
-        </div>
+        <p>
+          Remote working has grown rapidly due to technological advancements
+          and changing workplace expectations. This trend has both positive
+          and negative effects, as it offers employees greater flexibility
+          while also creating challenges for communication and teamwork.
+        </p>
       </div>
-    ),
-  },
 
-  // ================= DIRECT QUESTION =================
-  {
-    id: "direct-question",
-    title: "Direct Question Essay",
+      <div>
+        <h5>Body Paragraph 1</h5>
 
-    description:
-      "You must answer two or more specific questions directly and clearly in separate paragraphs.",
-
-    question:
-      "Why do many people choose to live abroad? Is this a positive or negative development?",
-
-    structure: [
-      "Introduction – paraphrase topic",
-      "Body Paragraph 1 – answer first question",
-      "Body Paragraph 2 – answer second question",
-      "Conclusion – summarize answers",
-    ],
-    modelEssay: (
-      <div className="space-y-5 text-slate-600 leading-relaxed">
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Introduction</h5>
-
-          <p>
-            In recent years, an increasing number of individuals have chosen to
-            live in foreign countries for various reasons. This essay will
-            explain why many people decide to move abroad and argue that this is
-            generally a positive development.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 1</h5>
-
-          <p>
-            Many people move abroad to access better employment opportunities
-            and higher standards of living. In some countries, wages are low and
-            career options are limited, so relocating can give individuals a
-            better chance to improve their financial situation. Others choose to
-            live overseas for educational advancement, as foreign universities
-            may offer stronger academic programmes, better facilities, or more
-            specialised courses.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Body Paragraph 2</h5>
-
-          <p>
-            Overall, this trend is largely positive because it promotes personal
-            growth and cultural exchange. People who live abroad often develop
-            independence, confidence, and a broader understanding of the world.
-            Moreover, they are exposed to different languages, traditions, and
-            ways of thinking, which can make them more open-minded. Although
-            challenges such as homesickness and cultural adjustment may occur,
-            these difficulties can usually be overcome with time and support.
-          </p>
-        </div>
-
-        <div>
-          <h5 className="font-bold text-slate-900 mb-2">Conclusion</h5>
-
-          <p>
-            In conclusion, people relocate abroad mainly for economic and
-            educational reasons. Despite certain difficulties, this development
-            is generally beneficial because it encourages personal development
-            and greater cultural understanding.
-          </p>
-        </div>
+        <p>
+          One major advantage of remote work is flexibility. Employees can
+          often organise their schedules more effectively, which allows them
+          to balance work and personal responsibilities. This can improve job
+          satisfaction and reduce stress, especially for workers with family
+          commitments. Furthermore, companies can reduce operational costs
+          because they may spend less on office space, electricity, and other
+          workplace facilities.
+        </p>
       </div>
-    ),
-  },
+
+      <div>
+        <h5>Body Paragraph 2</h5>
+
+        <p>
+          However, remote work also has disadvantages. It may lead to social
+          isolation because employees have fewer opportunities to interact
+          with colleagues in person. In addition, reduced face-to-face
+          communication can make collaboration more difficult, especially when
+          teams need to share ideas or solve problems quickly. Over time,
+          this may negatively affect creativity, teamwork, and employee
+          wellbeing.
+        </p>
+      </div>
+
+      <div>
+        <h5>Conclusion</h5>
+
+        <p>
+          In conclusion, while remote work offers flexibility and cost
+          savings, it also presents challenges related to communication,
+          collaboration, and social connection. Therefore, organisations
+          should try to balance remote work with opportunities for regular
+          interaction among employees.
+        </p>
+      </div>
+    </div>
+  ),
+},
+
+// ================= DIRECT QUESTION =================
+{
+  id: "direct-question",
+  title: "Direct Question Essay",
+
+  description:
+    "You must answer two or more specific questions directly and clearly in separate paragraphs.",
+
+  question:
+    "Why do many people choose to live abroad? Is this a positive or negative development?",
+
+  structure: [
+    "Introduction – paraphrase topic",
+    "Body Paragraph 1 – answer first question",
+    "Body Paragraph 2 – answer second question",
+    "Conclusion – summarize answers",
+  ],
+
+  modelEssay: (
+    <div className="space-y-6 text-slate-600 leading-8 [&_p]:text-justify [&_p]:leading-8 [&_h5]:text-base [&_h5]:font-bold [&_h5]:text-slate-900 [&_h5]:mb-2">
+      <div>
+        <h5>Introduction</h5>
+
+        <p>
+          In recent years, an increasing number of individuals have chosen to
+          live in foreign countries for various reasons. This essay will
+          explain why many people decide to move abroad and argue that this
+          is generally a positive development.
+        </p>
+      </div>
+
+      <div>
+        <h5>Body Paragraph 1</h5>
+
+        <p>
+          Many people move abroad to access better employment opportunities
+          and higher standards of living. In some countries, wages are low
+          and career options are limited, so relocating can give individuals
+          a better chance to improve their financial situation. Others choose
+          to live overseas for educational advancement, as foreign
+          universities may offer stronger academic programmes, better
+          facilities, or more specialised courses.
+        </p>
+      </div>
+
+      <div>
+        <h5>Body Paragraph 2</h5>
+
+        <p>
+          Overall, this trend is largely positive because it promotes
+          personal growth and cultural exchange. People who live abroad often
+          develop independence, confidence, and a broader understanding of
+          the world. Moreover, they are exposed to different languages,
+          traditions, and ways of thinking, which can make them more
+          open-minded. Although challenges such as homesickness and cultural
+          adjustment may occur, these difficulties can usually be overcome
+          with time and support.
+        </p>
+      </div>
+
+      <div>
+        <h5>Conclusion</h5>
+
+        <p>
+          In conclusion, people relocate abroad mainly for economic and
+          educational reasons. Despite certain difficulties, this development
+          is generally beneficial because it encourages personal development
+          and greater cultural understanding.
+        </p>
+      </div>
+    </div>
+  ),
+},
+
+
 ];
+

@@ -179,7 +179,7 @@ export default function Lesson() {
                   </div>
 
                   <div className="mt-6">
-                    <TipBox>
+                    <TipBox title="IELTS TIP">
                       There are no correct opinions in IELTS. Examiners score
                       clarity, organisation, vocabulary, and grammar.
                     </TipBox>
@@ -302,7 +302,7 @@ export default function Lesson() {
                   </div>
 
                   <div className="mt-6">
-                    <TipBox title="Example Transformation">
+                    <TipBox title="Example">
                       <p className="mb-2">❌ Weak connection:</p>
                       <p className="italic text-slate-600">
                         Technology helps communication. People talk more online.
@@ -355,7 +355,7 @@ export default function Lesson() {
                             </ul>
                           </div>
 
-                          <TipBox title="Try First">
+                          <TipBox title="Before you reveal">
                             Spend 3–5 minutes planning your ideas before
                             revealing the model structure. IELTS rewards
                             independent thinking.
