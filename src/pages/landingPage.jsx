@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../components/button";
 import { motion } from "framer-motion";
-
+import Section from "../components/section";
 export default function Landing() {
   const navigate = useNavigate();
 
@@ -25,8 +25,8 @@ export default function Landing() {
 
   return (
     <main className="min-h-screen bg-linear-to-br from-rose-50 via-white to-rose-100">
-      <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="max-w-6xl mx-auto">
+      <Section>
+        <div >
           {/* Hero Card */}
           <div className="relative overflow-hidden rounded-3xl bg-white shadow-2xl shadow-rose-200/60 border border-rose-100 px-6 py-14 sm:px-10 lg:px-16 text-center">
             {/* Background decoration */}
@@ -34,14 +34,7 @@ export default function Landing() {
             <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-rose-300/30 rounded-full blur-3xl" />
 
             <div className="relative z-10">
-              <motion.p
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="text-xs sm:text-sm uppercase tracking-[0.3em] text-rose-500 font-semibold"
-              >
-                IELTS Writing Task 2
-              </motion.p>
+          
 
               <motion.h1
                 initial={{ opacity: 0, y: 18 }}
@@ -49,7 +42,7 @@ export default function Landing() {
                 transition={{ delay: 0.1, duration: 0.5 }}
                 className="mt-4 text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-slate-900"
               >
-                Master Essay Writing with Confidence
+                Master <span className="text-rose-500">IELTS Task 2</span>  Writing with Confidence
               </motion.h1>
 
               <motion.p
@@ -61,30 +54,6 @@ export default function Landing() {
                 Learn proven essay structure, practise with real IELTS-style
                 questions, and get guided feedback — all in one simple flow.
               </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                className="mt-8 flex flex-col sm:flex-row gap-3 justify-center"
-              >
-                <Button
-                  className="w-full sm:w-auto"
-                  onClick={() => navigate("/preview")}
-                >
-                  Start Lesson
-                </Button>
-
-                <Button
-                  variant="secondary"
-                  className="w-full sm:w-auto"
-                  onClick={() => navigate("/practice")}
-                >
-                  Try Practice Question
-                </Button>
-              </motion.div>
-            </div>
-          </div>
 
           {/* Features */}
           <motion.div
@@ -110,8 +79,32 @@ export default function Landing() {
               </div>
             ))}
           </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className="mt-8 flex flex-col sm:flex-row gap-3 justify-center"
+              >
+                <Button
+                  className="w-full sm:w-auto"
+                  onClick={() => navigate("/preview")}
+                >
+                  Start Lesson
+                </Button>
+
+                <Button
+                  variant="secondary"
+                  className="w-full sm:w-auto"
+                  onClick={() => navigate("/practice")}
+                >
+                  Try Practice Question
+                </Button>
+              </motion.div>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </Section>
     </main>
   );
 }

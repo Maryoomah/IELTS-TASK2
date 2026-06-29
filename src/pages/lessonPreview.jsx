@@ -28,9 +28,7 @@ export default function LessonPreview() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <p className="uppercase tracking-[0.3em] text-xs sm:text-sm font-semibold text-rose-500">
-              IELTS Writing Task 2
-            </p>
+            
 
             <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
               Section Overview
