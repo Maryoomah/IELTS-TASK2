@@ -53,7 +53,7 @@ export default function Lesson() {
 
   return (
     <main>
-      <LessonLayout title="">
+      <LessonLayout title="IELTS Writing Task 2">
         {/* Mobile progress bar */}
         <div className="fixed top-0 left-0 w-full h-1 bg-rose-100 lg:hidden z-50">
           <div
@@ -71,7 +71,7 @@ export default function Lesson() {
                    Lesson Outline
                 </p>
 
-                
+               
               </div>
 
               <nav className="mt-8 flex flex-col gap-2">
@@ -131,9 +131,9 @@ export default function Lesson() {
                   id="intro"
                   className="bg-white border border-rose-100 rounded-3xl p-6 sm:p-8 shadow-xl shadow-rose-100/60"
                 >
-                  {/* <p className="text-xs uppercase tracking-[0.25em] text-rose-500 font-semibold">
+                  <p className="text-xs uppercase tracking-[0.25em] text-rose-500 font-semibold lg-hidden">
                     Lesson Introduction
-                  </p> */}
+                  </p>
 
                   <h2 className="mt-3 font-extrabold text-2xl sm:text-3xl text-slate-900">
                     What is IELTS Writing Task 2?
