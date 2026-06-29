@@ -8,7 +8,7 @@ import Button from "../components/button";
 import { Structure } from "../data/structure";
 import StructureCard from "../components/structureCard";
 import { useNavigate } from "react-router-dom";
-
+import Section from "../components/section";
 export default function Lesson() {
   const navigate = useNavigate();
 
@@ -53,7 +53,7 @@ export default function Lesson() {
 
   return (
     <main>
-      <LessonLayout title="IELTS Writing Task 2">
+      <LessonLayout title="">
         {/* Mobile progress bar */}
         <div className="fixed top-0 left-0 w-full h-1 bg-rose-100 lg:hidden z-50">
           <div
@@ -68,12 +68,10 @@ export default function Lesson() {
             <aside className="hidden lg:flex flex-col w-72 h-screen sticky top-0 bg-white/80 backdrop-blur border-r border-rose-100 p-6">
               <div>
                 <p className="text-xs uppercase tracking-[0.25em] text-rose-500 font-semibold">
-                  Course Lesson
+                   Lesson Outline
                 </p>
 
-                <h2 className="mt-2 font-bold text-xl text-slate-900">
-                  Task 2 Writing
-                </h2>
+                
               </div>
 
               <nav className="mt-8 flex flex-col gap-2">
@@ -133,9 +131,9 @@ export default function Lesson() {
                   id="intro"
                   className="bg-white border border-rose-100 rounded-3xl p-6 sm:p-8 shadow-xl shadow-rose-100/60"
                 >
-                  <p className="text-xs uppercase tracking-[0.25em] text-rose-500 font-semibold">
+                  {/* <p className="text-xs uppercase tracking-[0.25em] text-rose-500 font-semibold">
                     Lesson Introduction
-                  </p>
+                  </p> */}
 
                   <h2 className="mt-3 font-extrabold text-2xl sm:text-3xl text-slate-900">
                     What is IELTS Writing Task 2?

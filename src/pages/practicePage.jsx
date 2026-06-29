@@ -4,6 +4,7 @@ import Button from "../components/button";
 import { questions } from "../data/questions";
 import { reviewEssay } from "../data/reviewEssay";
 import { getUserId } from "../utils/getUserId";
+import Section from "../components/section";
 export default function Practice() {
   const navigate = useNavigate();
   const [essay, setEssay] = useState("");
@@ -55,7 +56,7 @@ const handleSubmit = async () => {
   const wordCount = essay.trim() ? essay.trim().split(/\s+/).length : 0;
 
   return (
-    <main className="min-h-screen bg-linear-to-br from-rose-50 via-white to-rose-100 px-4 sm:px-6 py-10">
+    <main className="min-h-screen bg-linear-to-br from-rose-50 via-white to-rose-100 px-4 sm:px-6 py-8">
        <div className="m-8 sticky top-4 hidden md:block" >
               <Button
                 onClick={() => navigate(-1)}
@@ -66,9 +67,7 @@ const handleSubmit = async () => {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center">
-          <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-rose-500 font-semibold">
-            IELTS Writing Practice
-          </p>
+         
 
           <h1 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
             Practice Task 2 Essay Writing

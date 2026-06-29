@@ -1,7 +1,7 @@
 import Button from "../components/button";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import Section from "../components/section";
 export default function LessonPreview() {
   const navigate = useNavigate();
 
@@ -15,30 +15,12 @@ export default function LessonPreview() {
 
   return (
     <main className="min-h-screen bg-linear-to-br from-rose-50 via-white to-rose-100">
-      <section className="relative px-4 sm:px-6 py-14 sm:py-20 overflow-hidden">
+      <Section>
         {/* Glow effects */}
         <div className="absolute top-0 right-0 w-72 h-72 bg-rose-200/40 blur-3xl rounded-full" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-rose-300/30 blur-3xl rounded-full" />
 
         <div className="relative max-w-5xl mx-auto">
-          {/* Top Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center"
-          >
-            
-
-            <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-              Section Overview
-            </h1>
-
-            <p className="mt-5 max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
-              Learn how to recognise IELTS essay types quickly and apply the
-              correct structure confidently during the exam.
-            </p>
-          </motion.div>
 
           {/* Main Card */}
           <motion.div
@@ -52,9 +34,9 @@ export default function LessonPreview() {
 
             <div className="p-6 sm:p-10">
               {/* Intro */}
-              <div className="max-w-3xl">
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-                  Why this lesson matters
+              <div className="">
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 text-center">
+                  Why this Lesson Matters
                 </h2>
 
                 <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -68,8 +50,7 @@ export default function LessonPreview() {
               {/* Learning Outcomes */}
               <div className="mt-10">
                 <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
-                  Learning Outcomes
-                </h3>
+By the end of the lesson, you should be able to:                </h3>
 
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
                   {outcomes.map((item, index) => (
@@ -102,7 +83,7 @@ export default function LessonPreview() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </Section>
     </main>
   );
 }

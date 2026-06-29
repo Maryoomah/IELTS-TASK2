@@ -8,9 +8,9 @@ export default function ViewEssays() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const userId = getUserId()
-fetch(`${import.meta.env.VITE_API_URL}/submissions?user_id=${userId}`)    
-  .then((res) => res.json())
+    const userId = getUserId();
+    fetch(`${import.meta.env.VITE_API_URL}/submissions?user_id=${userId}`)
+      .then((res) => res.json())
       .then((data) => setEssays(data))
       .catch((err) => console.log(err));
   }, []);
@@ -20,10 +20,6 @@ fetch(`${import.meta.env.VITE_API_URL}/submissions?user_id=${userId}`)
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center">
-          <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-rose-500 font-semibold">
-            Essay History
-          </p>
-
           <h1 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
             Submitted Essays
           </h1>
